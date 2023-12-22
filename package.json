@@ -12,8 +12,10 @@
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "framer-motion": "^10.16.16",
+    "locomotive-scroll": "^4.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-locomotive-scroll": "^0.2.2",
     "react-scroll-motion": "^0.3.2",
     "sass": "^1.69.5",
     "styled-components": "^6.1.2"
