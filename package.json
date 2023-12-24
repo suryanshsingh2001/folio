@@ -11,14 +11,22 @@
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
+    "@react-three/drei": "^9.92.6",
+    "@react-three/fiber": "^8.15.12",
+    "@splinetool/loader": "^1.0.16",
+    "@splinetool/r3f-spline": "^1.0.2",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^1.0.16",
     "framer-motion": "^10.16.16",
+    "gsap": "^3.12.4",
     "locomotive-scroll": "^4.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-locomotive-scroll": "^0.2.2",
     "react-scroll-motion": "^0.3.2",
     "sass": "^1.69.5",
-    "styled-components": "^6.1.2"
+    "styled-components": "^6.1.2",
+    "three": "^0.160.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",
