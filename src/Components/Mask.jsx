@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import useMousePosition from './useMousePosition';
 
-const Home = () => {
+const Mask = () => {
   const [isHovered, setIsHovered] = useState(false);
   const { x, y } = useMousePosition();
   const size = isHovered ? 400 : 40;
@@ -40,4 +40,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Mask;
