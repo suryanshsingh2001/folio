@@ -27,13 +27,13 @@ const Mask = () => {
             setIsHovered(false);
           }}
         >
-          A visual designer - with skills that haven't been replaced by A.I (yet) - making good shit only if the paycheck is equally good.
+          I'm a passionate learner weaving together React JS, AWS, Flutter, and Figma to continually evolve and create meaningful digital experiences.
         </p>
       </motion.div>
 
       <div className={styles.body}>
         <p>
-          I'm a <span>selectively skilled</span> product designer with a strong focus on producing high-quality & impactful digital experiences.
+        I'm a <span>versatile and proficient</span> software engineer dedicated to crafting robust and innovative solutions for complex technical challenges.
         </p>
       </div>
     </main>

@@ -1,72 +1,49 @@
-import React, { useState, useLayoutEffect, useRef } from 'react'
-import styles from './projects.module.css';
-import Image from 'next/image';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import styles from './skills.module.css'
+import { useState } from 'react';
+import Project from './project';
+import Modal from './modal';
 
 const projects = [
-    {
-        title: "QR Share",
-        src: "QR.png"
-    },
-    {
-        title: "Brain Tune",
-        src: "Tumor.png"
-    },
-    {
-        title: "AQI",
-        src: "aqi.png"
-    },
-    {
-        title: "Miniques Lagoons",
-        src: "miniques_lagoon.jpg"
-    },
+  {
+    title: "EcoAir",
+    src: "AQI.png",
+    color: "#15011e",
+    description: "An elegant and intuitive Android application \ndesigned and developed to track Air Quality \nIndex (AQI) in remote areas.",
+  },
+  {
+    title: "QR Share",
+    src: "QR.png",
+    color: "#15011e",
+    description: "A user-friendly Flutter app for effortless sharing \nof images, text, videos, and more, simply by \nscanning a QR Code.",
+  },
+  {
+    title: "Brain Tune",
+    src: "Tumor.png",
+    color: "#15011e",
+    description: "An advanced algorithm developed to \n detect brain tumors, aiding in early \n diagnosis and improving patient outcomes.",
+  },
+  {
+    title: "Folio",
+    src: "Folio.png",
+    color: "#15011e",
+    description: "Designed and developed a portfolio \nwebsite to showcase my projects and \nachievements, using React.js",
+  }
 ]
 
 export default function Projects() {
 
-    const [selectedProject, setSelectedProject] = useState(0);
-    const container = useRef(null);
-    const imageContainer = useRef(null);
+  const [modal, setModal] = useState({active: false, index: 0})
 
-    useLayoutEffect( () => {
-        gsap.registerPlugin(ScrollTrigger);
-        ScrollTrigger.create({
-            trigger: imageContainer.current,
-            pin: true,
-            start: "top-=100px",
-            end: document.body.offsetHeight - window.innerHeight - 50,
+  return (
+  <main className={styles.main}>
+    <div className={styles.body}>
+      {
+        projects.map( (project, index) => {
+          return <Project index={index} title={project.title} description={project.description} setModal={setModal} key={index}/>
         })
-    }, [])
-
-    return (
-        <div ref={container} className={styles.projects}>
-            <div className={styles.projectDescription}>
-                <div ref={imageContainer} className={styles.imageContainer}>
-                    <Image 
-                        src={`src/assets/${projects[selectedProject].src}`}
-                        fill={true}
-                        alt="project image"
-                        priority={true}
-                    />
-                </div>
-                <div className={styles.column}>
-                    <p>The flora is characterized by the presence of high elevation wetland, as well as yellow straw, broom sedge, tola de agua and tola amaia.</p>
-                </div>
-                <div className={styles.column}>
-                    <p>Some, like the southern viscacha, vicuña and Darwins rhea, are classified as endangered species. Others, such as Andean goose, horned coot, Andean gull, puna tinamou and the three flamingo species inhabiting in Chile (Andean flamingo, Chilean flamingo, and Jamess flamingo) are considered vulnerable.</p>
-                </div>
-            </div>
-
-            <div className={styles.projectList}>
-                {
-                    projects.map( (project, index) => {
-                        return <div key={index} onMouseOver={() => {setSelectedProject(index)}} className={styles.projectEl}>
-                            <h2>{project.title}</h2>
-                        </div>
-                    })
-                }
-            </div>
-        </div>
-    )
+      }
+    </div>
+    <Modal modal={modal} projects={projects}/>
+  </main>
+  )
 }
