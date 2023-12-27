@@ -1,4 +1,4 @@
-import styles from './skills.module.css'
+import styles from '../skills.module.css'
 import { useState } from 'react';
 import Project from './project';
 import Modal from './modal';

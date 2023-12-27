@@ -1,4 +1,4 @@
-import styles from './mask.module.css';
+import styles from '../mask.module.css';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import useMousePosition from './useMousePosition';
