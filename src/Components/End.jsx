@@ -1,4 +1,3 @@
-'use client'
 import styles from '../end.module.css'
 import { useRef, useEffect } from 'react';
 
