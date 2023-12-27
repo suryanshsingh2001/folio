@@ -1,4 +1,3 @@
-'use client';
 import styles from './mask.module.scss';
 import { useState } from 'react';
 import { motion } from 'framer-motion';

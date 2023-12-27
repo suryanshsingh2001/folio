@@ -9,24 +9,28 @@ const projects = [
     src: "AQI.png",
     color: "#15011e",
     description: "An elegant and intuitive Android application \ndesigned and developed to track Air Quality \nIndex (AQI) in remote areas.",
+    link: ""
   },
   {
     title: "QR Share",
     src: "QR.png",
     color: "#15011e",
     description: "A user-friendly Flutter app for effortless sharing \nof images, text, videos, and more, simply by \nscanning a QR Code.",
+    link: ""
   },
   {
     title: "Brain Tune",
     src: "Tumor.png",
     color: "#15011e",
     description: "An advanced algorithm developed to \n detect brain tumors, aiding in early \n diagnosis and improving patient outcomes.",
+    link: ""
   },
   {
     title: "Folio",
     src: "Folio.png",
     color: "#15011e",
     description: "Designed and developed a portfolio \nwebsite to showcase my projects and \nachievements, using React.js",
+    link: ""
   }
 ]
 

@@ -1,9 +1,9 @@
 import React, { useRef, useLayoutEffect } from "react";
 import Background from "./Components/Background";
 import Foreground from "./Components/Foreground";
-import Mask from "./Components/mask";
 import Projects from "./Components/Projects.jsx";
 import End from "./Components/End.jsx";
+import Mask from "./Components/Mask";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
 const App = () => {
