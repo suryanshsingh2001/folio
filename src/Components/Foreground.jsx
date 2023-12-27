@@ -6,7 +6,7 @@ const Foreground = () => {
     <div className='absolute z-2 bg-black h-screen w-screen bg-opacity-50 text-white justify-between flex flex-col text-center'>
       <nav className='h-100 w-screen flex justify-between px-2 py-3 text-xl'>
           <h3>Guneet Singh</h3>
-          <h4>Menu</h4>
+          <h4>2023</h4>
       </nav>
       <h1 className='text-[20vw]'>
         Folio
